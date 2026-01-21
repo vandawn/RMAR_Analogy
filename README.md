@@ -12,8 +12,8 @@ cd /MPT
 bash scripts/run_pretrain_mkgformer_struct.sh
 bash scripts/run_finetune_mkgformer_struct.sh
 ```
-
-To evaluate RMAR-MKGFormer, run:
+### MKGE
+To evaluate RMAR-RotatE, run:
 ```bash
 cd /MKGE
 bash scripts/run_RMAR.sh
