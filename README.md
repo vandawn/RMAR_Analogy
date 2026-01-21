@@ -4,10 +4,22 @@ Code and datasets for the WWW2026 paper "Relation-Aware Multimodal Analogical Re
 ## MCNet Dataset
 The text and image data of the MCNet Dataset can be downloaded through [Google Drive](https://drive.google.com/file/d/1DhIg_S32yIr-h7_W9nxBXkWyK3zH6_T5/view?usp=drive_link).
 
+## Run
+### MPT
+To evaluate RMAR-MKGFormer, run:
+```bash
+cd /MPT
+bash scripts/run_pretrain_mkgformer_struct.sh
+bash scripts/run_finetune_mkgformer_struct.sh
 
+To evaluate RMAR-MKGFormer, run:
+```bash
+cd /MPT
+bash scripts/run_pretrain_mkgformer_struct.sh
+bash scripts/run_finetune_mkgformer_struct.sh
 
-The expected structure of files is:
-
+cd /MKGE
+bash scripts/run_RMAR.sh
 
 ## Citations
 
