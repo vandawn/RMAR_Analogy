@@ -1,0 +1,23 @@
+python main_struct.py \
+    --gpus "0," \
+    --max_epochs=30 \
+    --num_workers=4 \
+    --model_name_or_path bert-base-uncased \
+    --visual_model_path openai/clip-vit-base-patch32 \
+    --accumulate_grad_batches 1 \
+    --data_class data.data_module_struct.KGC \
+    --model_class models.model_struct.MKGformerKGC \
+    --litmodel_class lit_models.transformer_struct.TransformerLitModel \
+    --batch_size 64 \
+    --pretrain 1 \
+    --bce 0 \
+    --check_val_every_n_epoch 1 \
+    --overwrite_cache \
+    --data_dir dataset/MCNetAnalogy \
+    --pretrain_path dataset/MCNetKG \
+    --eval_batch_size 128 \
+    --max_seq_length 160 \
+    --lr 5e-5 \
+    --fusion_strategy gate \
+    --structural_embedding_path KG_embedding.pt \
+    --structural_data_dir MCNetKG
