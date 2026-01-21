@@ -11,13 +11,13 @@ To evaluate RMAR-MKGFormer, run:
 cd /MPT
 bash scripts/run_pretrain_mkgformer_struct.sh
 bash scripts/run_finetune_mkgformer_struct.sh
-```bash
+```
 
 To evaluate RMAR-MKGFormer, run:
 ```bash
 cd /MKGE
 bash scripts/run_RMAR.sh
-```bash
+```
 
 ## Citations
 
@@ -33,7 +33,7 @@ If you find this repository useful, please consider citing our paper:
   url       = {https://doi.org/10.1145/3774904.3792481},
   year      = {2026}
 }
-```bibtex
+```
 
 
 
